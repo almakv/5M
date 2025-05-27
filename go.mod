@@ -1,5 +1,5 @@
 module 5M
 
-go 1.24
+go 1.24.3
 
-require gopkg.in/yaml.v3 v3.0.1 // indirect
+require github.com/go-yaml/yaml v2.1.0+incompatible // indirect

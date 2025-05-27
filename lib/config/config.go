@@ -2,8 +2,8 @@ package config
 
 import (
 	"fmt"
+	"github.com/go-yaml/yaml"
 	"os"
-	"yaml"
 )
 
 // Config содержит всю конфигурацию приложения

@@ -25,7 +25,7 @@ func setupRoutes() *http.ServeMux {
 
 func main() {
 	// Загрузка конфигурации
-	configPath := filepath.Join(".", "config.yaml")
+	configPath := filepath.Join(".", "lib/config/config.yaml")
 	cfg, err := config.LoadConfig(configPath)
 	if err != nil {
 		log.Fatalf("Ошибка при загрузке конфигурации: %v", err)
