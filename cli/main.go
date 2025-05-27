@@ -1,13 +1,11 @@
 package main
 
 import (
+	"5M/lib/config"
 	"fmt"
 	"log"
 	"net/http"
-	"os"
 	"path/filepath"
-
-	"yourproject/config"
 )
 
 func helloHandler(w http.ResponseWriter, r *http.Request) {
@@ -19,7 +17,6 @@ func healthCheckHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func setupRoutes() *http.ServeMux {
-
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", helloHandler)
 	mux.HandleFunc("/health", healthCheckHandler)
@@ -48,7 +45,6 @@ func main() {
 		Addr:    serverAddr,
 		Handler: mux,
 	}
-
 	if err := server.ListenAndServe(); err != nil {
 		log.Fatalf("Ошибка запуска сервера: %v", err)
 	}
