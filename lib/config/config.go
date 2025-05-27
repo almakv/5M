@@ -3,6 +3,7 @@ package config
 import (
 	"fmt"
 	"os"
+	"yaml"
 )
 
 // Config содержит всю конфигурацию приложения
