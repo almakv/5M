@@ -9,11 +9,11 @@ import (
 )
 
 func helloHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Привет, мир!")
+	_, _ = fmt.Fprintf(w, "Привет, мир!")
 }
 
 func healthCheckHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Сервис работает")
+	_, _ = fmt.Fprintf(w, "Сервис работает")
 }
 
 func setupRoutes() *http.ServeMux {
@@ -25,7 +25,7 @@ func setupRoutes() *http.ServeMux {
 
 func main() {
 	// Загрузка конфигурации
-	configPath := filepath.Join(".", "lib/config/config.yaml")
+	configPath := filepath.Join(".", "lib/config/local.yaml")
 	cfg, err := config.LoadConfig(configPath)
 	if err != nil {
 		log.Fatalf("Ошибка при загрузке конфигурации: %v", err)
