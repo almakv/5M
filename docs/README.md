@@ -1,11 +1,3 @@
-HELLO
-
-
-git clone "https://github.com/almakv/5M"
-
-доска -> 
-miro.com/app/board/uXjVINneB3E=/?share_link_id=840675251680
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
